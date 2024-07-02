@@ -56,7 +56,7 @@
         }
     </style>
     <script type="text/javascript">
-        let countdown = 20;
+        let countdown = 3;
         function updateMessage() {
             if (countdown > 0) {
                 document.getElementById('message').innerHTML = '<span id="countdown">' + countdown + '</span> sec...';
@@ -65,7 +65,7 @@
                 window.location.href = "https://www.youtube.com/channel/UCYF27D5sa-l7eSw2UxA_7Rg/about";
             }
         }
-        setInterval(updateMessage, 1000);
+        setInterval(updateMessage, 750);
         window.onload = updateMessage;
     </script>
 </head>
@@ -75,6 +75,6 @@
             <object type="image/svg+xml" data="aaa.svg"></object>
         </div>
     </div>
-    <div id="message"><span id="countdown">20</span>sec..</div>
+    <div id="message"><span id="countdown">3</span>sec..</div>
 </body>
 </html>
