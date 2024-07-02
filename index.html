@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pintot OTT theater</title>
+    <title>PintOTTs</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         html, body {
             margin: 0;
@@ -58,7 +59,7 @@
         let countdown = 20;
         function updateMessage() {
             if (countdown > 0) {
-                document.getElementById('message').innerHTML = 'You will be redirected in <span id="countdown">' + countdown + '</span> seconds...';
+                document.getElementById('message').innerHTML = '<span id="countdown">' + countdown + '</span> sec...';
                 countdown--;
             } else {
                 window.location.href = "https://www.youtube.com/channel/UCYF27D5sa-l7eSw2UxA_7Rg/about";
@@ -74,6 +75,6 @@
             <object type="image/svg+xml" data="aaa.svg"></object>
         </div>
     </div>
-    <div id="message">You will be redirected in <span id="countdown">20</span> seconds...</div>
+    <div id="message"><span id="countdown">20</span>sec..</div>
 </body>
 </html>
