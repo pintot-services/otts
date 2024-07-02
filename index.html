@@ -23,21 +23,17 @@
         }
 
         #svg-wrapper {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 100%;
+            width: auto;
+            height: 100%;
+            aspect-ratio: 1;
             border-radius: 50%;
             overflow: hidden;
-            background-color: white;
         }
 
         #svg-wrapper object {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
+            border-radius: 50%;
         }
 
         #message {
@@ -51,7 +47,7 @@
         }
     </style>
     <script type="text/javascript">
-        let countdown = 5;
+        let countdown = 2;
         function updateMessage() {
             if (countdown > 0) {
                 document.getElementById('message').innerText = "You will be redirected in " + countdown + " seconds...";
@@ -70,6 +66,6 @@
             <object type="image/svg+xml" data="aaa.svg"></object>
         </div>
     </div>
-    <div id="message">You will be redirected in 5 seconds...</div>
+    <div id="message">You will be redirected in 2 seconds...</div>
 </body>
 </html>
